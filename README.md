@@ -6,7 +6,7 @@
 
 This package lets you use new JavaScript language features that are part
 of the [ECMAScript 2015
-specification](http://www.ecma-international.org/ecma-262/6.0/) but are
+specification](http://www.ecma-international.org/ecma-262/6.0/) (including importing modules) but are
 not yet supported by all engines or browsers. Unsupported syntax is
 automatically translated into standard JavaScript that behaves the same
 way.

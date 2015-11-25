@@ -1,4 +1,4 @@
-var modulesVersion = '0.6.5'; // this package should release with original universe:modules
+var modulesVersion = '0.6.6'; // this package should release with original universe:modules
 
 Package.describe({
     name: 'universe:ecmascript',

@@ -16,9 +16,9 @@ Package.registerBuildPlugin({
 
 Package.onUse(function (api) {
     api.versionsFrom('1.2.0.2');
+    api.use(['universe:modules@' + modulesVersion, 'isobuild:compiler-plugin@1.0.0']);
     api.imply('ecmascript-runtime');
     api.imply('babel-runtime');
     api.imply('promise');
-    api.use(['universe:modules@' + modulesVersion, 'isobuild:compiler-plugin@1.0.0']);
     api.imply('universe:modules@' + modulesVersion);
 });

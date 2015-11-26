@@ -2,7 +2,7 @@ var modulesVersion = '0.6.6'; // this package should release with original unive
 
 Package.describe({
     name: 'universe:ecmascript',
-    version: modulesVersion,
+    version: '0.6.6_1',
     summary: 'Supports ES2015+ in all .js files with modules',
     git: 'https://github.com/vazco/universe-ecmascript',
     documentation: 'README.md'
@@ -16,7 +16,9 @@ Package.registerBuildPlugin({
 
 Package.onUse(function (api) {
     api.versionsFrom('1.2.0.2');
-    // Use Meteor 1.2 build plugin
+    api.imply('ecmascript-runtime');
+    api.imply('babel-runtime');
+    api.imply('promise');
     api.use(['universe:modules@' + modulesVersion, 'isobuild:compiler-plugin@1.0.0']);
     api.imply('universe:modules@' + modulesVersion);
 });

@@ -19,7 +19,8 @@ it provides.
 You can use modules in plain `*.js` ans `*.jsx` files, there is no need for `*.import.js(x)` extension anymore.
 But modules from `*.js`, `*.jsx` will be auto loaded in first moment when all dependencies are loaded.
 It mean that:
-- If no dependencies (none import) it will be immediately loaded without registering
+- If no imports and no exports was specified in file, this file will be loaded as was a before ( without module definition )
+- If no dependencies (none import) but if there is at least one export in file, the file will immediately will be loaded and it will set as a module without registering.
 - If all dependencies are loaded it will be immediately loaded without registering
 - If not all dependencies are loaded, your module will be registered and imported when all dependencies will loaded. 
 

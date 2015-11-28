@@ -47,7 +47,7 @@ Removing `jsx` can be more tricky as it could be implied by `react` "umbrella" p
 If your using `react` package then you need to remove it and add other dependencies back:
 
     meteor remove react jsx
-    meteor add react-runtime react-meteor-data
+    meteor add react-meteor-data //if you use it
 
 
 ### TL;DR

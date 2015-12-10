@@ -2,7 +2,7 @@ var modulesVersion = '0.6.7'; // this package should release with original unive
 
 Package.describe({
     name: 'universe:ecmascript',
-    version: modulesVersion,
+    version: modulesVersion+'_1',
     summary: 'Supports ES2015+ in all .js files with modules',
     git: 'https://github.com/vazco/universe-ecmascript',
     documentation: 'README.md'

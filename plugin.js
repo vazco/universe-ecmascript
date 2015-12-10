@@ -20,11 +20,12 @@ class UniverseEcmascriptCompiler extends UniverseModulesCompiler {
             const ast = recast.parse(source, {esprima});
             const module = Module(ast);
             // we check if our source definitely won't be a module  (no imports and no exports)
+
             if (!module.isModule()) {
                 return this.compileNonModuleFile(inputFile, source);
             }
         } catch (e) {
-            console.log('WARNING:', e);
+            //console.log(e);
             /* It is possible that esprima will not recognize all imports syntax,
              so this must be wrapped by the autoload function */
         }

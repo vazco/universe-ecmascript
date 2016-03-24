@@ -1,7 +1,6 @@
 const recast = Npm.require('recast');
 const esprima = Npm.require('esprima-fb');
 const Module = Npm.require('es6-module-crosspiler');
-
 class UniverseEcmascriptCompiler extends UniverseModulesCompiler {
 
     constructor () {
@@ -65,6 +64,13 @@ class UniverseEcmascriptCompiler extends UniverseModulesCompiler {
             data: result.code,
             sourceMap: result.map
         }
+    }
+    getModuleId (inputFile) {
+        let moduleId = super.getModuleId(inputFile);
+        if(inputFile.getExtension() === 'jsx') {
+            moduleId +='.jsx';
+        }
+        return moduleId;
     }
 
 }

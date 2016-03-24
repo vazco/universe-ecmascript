@@ -1,8 +1,8 @@
-var modulesVersion = '0.6.7'; // this package should release with original universe:modules
+var modulesVersion = '0.6.8'; // this package should release with original universe:modules
 
 Package.describe({
     name: 'universe:ecmascript',
-    version: modulesVersion+'_1',
+    version: '0.7.0',
     summary: 'Supports ES2015+ in all .js files with modules',
     git: 'https://github.com/vazco/universe-ecmascript',
     documentation: 'README.md'
@@ -24,7 +24,8 @@ Package.onUse(function (api) {
     api.use(['universe:modules@' + modulesVersion, 'isobuild:compiler-plugin@1.0.0']);
     api.imply('ecmascript-runtime@0.2.6');
     api.imply('babel-runtime');
-    api.imply('react-runtime@0.14.1||0.13.3');
+    api.imply('react-runtime@0.14.3||0.13.3');
     api.imply('promise');
     api.imply('universe:modules@' + modulesVersion);
+    api.addFiles('paths.js');
 });

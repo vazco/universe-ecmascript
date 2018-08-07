@@ -1,6 +1,14 @@
-## Abandonware
+<h1 align="center">
+    <a href="https://github.com/vazco">vazco</a>/Universe ECMAScript
+</h1>
 
-# Universe Ecmascript
+&nbsp;
+
+<h3 align="center">
+  -- Abandonware. This package is deprecated! --
+</h3>
+
+&nbsp;
 
 ## About
 
@@ -352,3 +360,9 @@ Complete reference [here](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 * `Function.prototype[Symbol.hasInstance]` (fixes IE9+)
 
 Complete reference [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
+
+## License
+
+<img src="https://vazco.eu/banner.png" align="right">
+
+**Like every package maintained by [Vazco](https://vazco.eu/), Universe ECMAScript is [MIT licensed](https://github.com/vazco/uniforms/blob/master/LICENSE).**
